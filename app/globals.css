@@ -110,7 +110,8 @@ svg { flex-shrink:0; }
 .work-grid article>span { font-size:12px; color:#7a8da3; }
 .work-grid h3 { font-size:18px; margin:17px 0 10px; }
 .work-grid p { font-size:15px; }
-.section-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:36px; margin-bottom:40px; }
+.section-heading { display:grid; grid-template-columns:minmax(0,1fr) minmax(300px,.9fr); align-items:end; justify-content:space-between; gap:72px; margin-bottom:40px; }
+.section-heading .section-aside { justify-self:end; width:min(100%,560px); }
 .section-heading .eyebrow { margin-bottom:18px; }
 .section-label { font-size:13px; color:#647084; padding-left:12px; border-left:2px solid #f28c28; margin-bottom:7px; }
 .bill-section { background:#f4f7fa; }
@@ -355,7 +356,8 @@ svg { flex-shrink:0; }
   .focus-list>div { font-size:13px; gap:8px; }
   .focus-list svg { width:19px; }
   .about-copy>p:not(.eyebrow) { max-width:100%; margin-top:18px; }
-  .section-heading { flex-direction:column; align-items:flex-start; gap:13px; margin-bottom:25px; }
+  .section-heading { display:flex; flex-direction:column; align-items:flex-start; gap:13px; margin-bottom:25px; }
+  .section-heading .section-aside { justify-self:auto; width:auto; }
   .section-label { margin-bottom:0; font-size:12px; }
   .bill-grid { gap:27px; }
   .bill-photo { min-height:0; aspect-ratio:1.2; }
