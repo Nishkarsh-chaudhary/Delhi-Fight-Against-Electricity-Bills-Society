@@ -1,8 +1,10 @@
 /* Images use pre-sized, local WebP files and explicit responsive sources. */
 /* eslint-disable @next/next/no-img-element */
 import { ArrowRight, BookOpen, FileText } from 'lucide-react';
-import { society, guides, documents, participation, journey, workAreas } from '@/content/home';
+import pageContent, { society } from '@/content/pages/home';
 import { InfoDialog } from '@/components/site/info-dialog';
+
+const { guides, documents, participation, journey, workAreas } = pageContent;
 
 function EditorialImage({ name, alt, className = '' }: { name: string; alt: string; className?: string }) {
   return <img

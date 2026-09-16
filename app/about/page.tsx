@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { ArrowRight, Building2, MapPin, ShieldCheck } from 'lucide-react';
-import { society, aboutContent } from '@/content/home';
+import { society } from '@/content/pages/home';
+import aboutContent from '@/content/pages/about';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 

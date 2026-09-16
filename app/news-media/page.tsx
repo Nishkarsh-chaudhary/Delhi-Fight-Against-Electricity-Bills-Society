@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Newspaper } from 'lucide-react';
 import { NewsArchive } from './news-archive';
-import { newsMediaContent } from '@/content/home';
+import newsMediaContent from '@/content/pages/news-media';
 export const metadata: Metadata = { title: 'News & Media | Delhi Fight Against Electricity Bills Society', description: 'Society activities, electricity-billing developments, regulatory updates and Hindi newspaper coverage.' };
 export default function NewsMediaPage() {
  return <main id="main" className="media-page">

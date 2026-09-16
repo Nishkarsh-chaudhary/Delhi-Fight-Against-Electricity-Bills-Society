@@ -2,7 +2,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Building2, FileText, MessageSquare } from 'lucide-react';
-import { ourWorkContent } from '@/content/home';
+import ourWorkContent from '@/content/pages/our-work';
 
 export const metadata: Metadata = {
   title: 'Our Work',

@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Building2, FileText, Mail, MapPin, MessageSquare, Newspaper, Zap } from 'lucide-react';
-import { society, contactContent } from '@/content/home';
+import { society } from '@/content/pages/home';
+import contactContent from '@/content/pages/contact';
 export const metadata: Metadata = { title: 'Contact | Delhi Fight Against Electricity Bills Society', description: 'Contact the Society about electricity-billing concerns, Society information, association collaboration and media enquiries.' };
 const options = [
  { icon: Zap, title: 'Electricity Bill Concern', text: 'Need information about an electricity-billing issue?', label: 'Visit Bill Help', href: '/bill-help' },

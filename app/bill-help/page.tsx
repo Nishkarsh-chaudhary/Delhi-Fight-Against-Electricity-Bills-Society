@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { AlertCircle, CheckCircle2 } from 'lucide-react'
-import { billHelpContent } from '@/content/home'
+import billHelpContent from '@/content/pages/bill-help'
 
 export const metadata: Metadata = {
   title: 'Bill Help',
