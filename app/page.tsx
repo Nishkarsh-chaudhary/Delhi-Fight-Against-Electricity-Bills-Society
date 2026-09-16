@@ -90,7 +90,7 @@ export default function Home() {
     </section>
 
     <section id="news-media" className="section news-section">
-      <div className="container"><div className="section-heading"><div><p className="eyebrow">News & Media</p><h2>Electricity updates that matter.</h2></div><p className="section-aside">Society activities, regulatory information and relevant media coverage.</p></div>
+      <div className="container"><div className="section-heading"><div><p className="eyebrow">News & Media</p><h2>Electricity updates that matter.</h2><a href="/news-media" className="text-link">View News &amp; Media <ArrowRight size={18}/></a></div><p className="section-aside">Society activities, regulatory information and relevant media coverage.</p></div>
         <div className="news-grid"><article><span className="news-tag">Society updates</span><h3>Meetings, representations and awareness initiatives</h3><p>Updates will be added as approved records become available.</p></article><article><span className="news-tag">Electricity updates</span><h3>Understanding changes affecting electricity bills</h3><p>Plain-language explanations will link to the relevant official source.</p></article><article><span className="news-tag">Media coverage</span><h3>Electricity issues in the news</h3><p>External reporting will remain clearly attributed to its original publication.</p></article></div>
       </div>
     </section>

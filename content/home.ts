@@ -9,7 +9,7 @@ export const society = {
 
 // These destinations become full routes as the remaining pages are built.
 export const navigation = [
-  ['About', '/about'], ['Our Work', '/our-work'], ['News & Media', '/#news-media'],
+  ['About', '/about'], ['Our Work', '/our-work'], ['News & Media', '/news-media'],
   ['Bill Help', '/#bill-help'], ['Contact', '/#contact'],
 ] as const;
 
