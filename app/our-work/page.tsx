@@ -23,6 +23,6 @@ export default function OurWorkPage() {
 
     <section className="section participation-work-section"><div className="container participation-work-grid"><div><p className="eyebrow">Awareness & Participation</p><h2>Creating Awareness Beyond Representations</h2><p>Institutional representation is one part of the work. Consumer participation and public awareness are equally important.</p></div><ul>{activities.map((activity,i)=><li key={activity}><span>0{i+1}</span>{activity}</li>)}</ul></div></section>
 
-    <section className="section container work-cta"><div className="work-cta-card"><div><p className="eyebrow">Continue exploring</p><h2>Understand the issue first.</h2><p>Use Bill Help to learn about common electricity-bill components and prepare a documented concern.</p></div><Link href="/bill-help" className="button">Explore Bill Help <ArrowRight size={18} /></Link></div></section>
+    <section className="section container work-cta"><div className="work-cta-card"><div><p className="eyebrow">Continue exploring</p><h2>Understand the issue first.</h2><p>Use Bill Help to learn about common electricity-bill components and prepare a documented concern.</p></div><a href="/bill-help" className="button">Explore Bill Help <ArrowRight size={18} /></a></div></section>
   </main>;
 }
