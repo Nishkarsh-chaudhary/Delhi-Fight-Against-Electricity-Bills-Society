@@ -1,7 +1,7 @@
 /* Images use pre-sized, local WebP files and explicit responsive sources. */
 /* eslint-disable @next/next/no-img-element */
 import { ArrowRight, BookOpen, FileText } from 'lucide-react';
-import { society, guides, documents, issuePreview, participation, journey, workAreas } from '@/content/home';
+import { society, guides, documents, participation, journey, workAreas } from '@/content/home';
 import { InfoDialog } from '@/components/site/info-dialog';
 
 function EditorialImage({ name, alt, className = '' }: { name: string; alt: string; className?: string }) {
@@ -109,6 +109,6 @@ export default function Home() {
       <div className="participation-grid">{participation.map((p, i) => <article className="participation-card" key={p.title}><span className="participation-number">0{i + 1}</span><h3>{p.title}</h3><p>{p.description}</p><a href="/contact" className="text-link">Contact the Society <ArrowRight size={17}/></a></article>)}</div>
     </section>
 
-    <section id="share-concern" className="container concern-section"><div className="callout"><div><p className="eyebrow">Let’s start with your concern</p><h2>A question about your bill?</h2></div><div className="callout-action"><InfoDialog {...issuePreview} label="Submit your issue" className="button accent" /><p>Submissions are not open in this preview.</p></div></div></section>
+    <section id="share-concern" className="container concern-section"><div className="callout"><div><p className="eyebrow">Let’s start with your concern</p><h2>A question about your bill?</h2></div><div className="callout-action"><a href="/contact" className="button accent">Submit your issue <ArrowRight size={17}/></a><p>Contact the Society about your concern.</p></div></div></section>
   </main>;
 }
