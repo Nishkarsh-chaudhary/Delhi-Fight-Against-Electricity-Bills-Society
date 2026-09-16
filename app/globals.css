@@ -236,6 +236,45 @@ svg { flex-shrink:0; }
 .about-next-card .eyebrow { margin-bottom:8px; }
 .about-next-card h2 { font-size:24px; }
 .about-next-card p:not(.eyebrow) { margin-top:6px; font-size:14px; }
+.work-hero .about-hero-photo img { object-position:center 35%; }
+.work-approach-section { padding-bottom:88px; }
+.work-approach-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px 34px; }
+.work-approach-grid article { border-top:1px solid #b9c9d9; padding-top:19px; }
+.work-approach-grid article>span { font-size:12px; color:#7a8da3; }
+.work-approach-grid h3 { font-size:18px; margin:16px 0 9px; }
+.work-approach-grid p { font-size:15px; }
+.engagement-section { background:#f4f7fa; border-block:1px solid #e5ebf2; }
+.engagement-grid { display:grid; grid-template-columns:1fr 1fr; gap:85px; align-items:center; }
+.engagement-photo { position:relative; aspect-ratio:1.15; border-radius:8px; overflow:hidden; }
+.engagement-photo img { width:100%; height:100%; display:block; object-fit:cover; object-position:center 35%; }
+.engagement-photo span { position:absolute; left:17px; right:17px; bottom:17px; background:#123b67e8; color:#fff; padding:10px 13px; font-size:12px; line-height:1.45; }
+.engagement-grid h2 { margin-bottom:22px; }
+.engagement-grid p:not(.eyebrow) { font-size:16px; }
+.association-section { display:grid; grid-template-columns:1.05fr .95fr; gap:90px; align-items:center; }
+.association-section h2 { margin-bottom:22px; }
+.association-section p:not(.eyebrow):not(.source-note) { font-size:16px; }
+.association-card { border:1px solid var(--border); border-radius:8px; padding:30px; background:#f8fafc; }
+.association-year { display:block; font-size:42px; color:#c17b36; font-weight:500; line-height:1; margin-bottom:20px; }
+.association-card h3 { font-size:21px; }
+.association-card>p { font-size:15px; margin-top:8px; }
+.association-card dl { border-top:1px solid var(--border); margin:22px 0 0; }
+.association-card dl>div { display:flex; justify-content:space-between; gap:15px; border-bottom:1px solid var(--border); padding:11px 0; }
+.association-card dt { color:#647084; font-size:12px; }
+.association-card dd { color:#123b67; font-size:13px; margin:0; }
+.participation-work-section { background:#123b67; color:#fff; }
+.participation-work-grid { display:grid; grid-template-columns:1fr 1fr; gap:85px; }
+.participation-work-section h2 { color:#fff; }
+.participation-work-section .eyebrow { color:#c8d6e6; }
+.participation-work-section p { color:#d0dceb; max-width:480px; margin-top:20px; }
+.participation-work-grid ul { list-style:none; padding:0; margin:0; display:grid; grid-template-columns:1fr 1fr; gap:0 30px; }
+.participation-work-grid li { border-top:1px solid #ffffff30; padding:14px 0; color:#fff; font-size:14px; display:flex; gap:12px; }
+.participation-work-grid li span { color:#a9c0d8; font-size:11px; }
+.work-cta { padding-block:62px; }
+.work-cta-card { border:1px solid var(--border); border-radius:8px; padding:30px 34px; display:flex; align-items:center; gap:30px; background:#f8fafc; }
+.work-cta-card>div { flex:1; }
+.work-cta-card .eyebrow { margin-bottom:8px; }
+.work-cta-card h2 { font-size:25px; }
+.work-cta-card p:not(.eyebrow) { margin-top:6px; font-size:14px; }
 @media(min-width:1500px) { .photo-hero { min-height:650px; } }
 @media(max-width:1279px) {
   .container { width:calc(100% - 64px); }
@@ -277,6 +316,8 @@ svg { flex-shrink:0; }
   .footer-bottom { flex-direction:column; align-items:flex-start; gap:5px; }
   .inner-hero-grid,.who-page-section,.mission-grid,.registration-grid { gap:40px; }
   .objectives-grid { grid-template-columns:1fr 1fr; }
+  .work-approach-grid { grid-template-columns:1fr 1fr; }
+  .engagement-grid,.association-section,.participation-work-grid { gap:40px; }
   .about-next-card { flex-wrap:wrap; }
 }
 @media(max-width:639px) {
@@ -367,6 +408,10 @@ svg { flex-shrink:0; }
   .about-next { padding-block:45px; }
   .about-next-card { align-items:flex-start; padding:25px 22px; }
   .about-next-card .button { width:100%; }
+  .work-approach-grid,.engagement-grid,.association-section,.participation-work-grid { grid-template-columns:1fr; gap:30px; }
+  .participation-work-grid ul { grid-template-columns:1fr; }
+  .work-cta-card { flex-direction:column; align-items:flex-start; padding:25px 22px; }
+  .work-cta-card .button { width:100%; }
 }
 @media(max-width:359px) {
   .identity strong { font-size:16px; }
