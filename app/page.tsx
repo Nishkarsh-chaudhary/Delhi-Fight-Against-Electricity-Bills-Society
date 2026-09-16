@@ -1,7 +1,7 @@
 /* Images use pre-sized, local WebP files and explicit responsive sources. */
 /* eslint-disable @next/next/no-img-element */
 import { ArrowRight, BookOpen, FileText, Users, Scale, HandHeart } from 'lucide-react';
-import { society, guides, documents, issuePreview, participation } from '@/content/home';
+import { society, guides, documents, issuePreview, participation, journey, workAreas } from '@/content/home';
 import { InfoDialog } from '@/components/site/info-dialog';
 
 const focusAreas = [
@@ -32,10 +32,10 @@ export default function Home() {
       <div className="container hero-content">
         <p className="eyebrow"><span /> For electricity consumers across Delhi</p>
         <h1 id="hero-title">Delhi Fight Against<br className="hero-break" /> Electricity Bills Society</h1>
-        <p className="hero-lead">Clarity on bills. A collective voice.</p>
+        <p className="hero-lead">Standing Together for Electricity Consumers in Delhi</p>
         <div className="actions">
-          <a href="#bill-help" className="button accent">Understand your bill <ArrowRight size={18} /></a>
-          <InfoDialog {...issuePreview} label="Submit your issue" className="button hero-secondary" />
+          <a href="#bill-help" className="button accent">Get Bill Help <ArrowRight size={18} /></a>
+          <a href="#about" className="button hero-secondary">Know About Us <ArrowRight size={18} /></a>
         </div>
       </div>
       <div className="hero-bottom container"><span>Awareness</span><i /><span>Transparency</span><i /><span>Representation</span></div>
@@ -58,9 +58,15 @@ export default function Home() {
       <div className="about-copy">
         <p className="eyebrow">About the Society</p>
         <h2>Better informed.<br />Stronger together.</h2>
-        <p>Bringing Delhi’s consumers together through awareness, documentation and participation.</p>
+        <p>Delhi Fight Against Electricity Bills Society is a registered society working to raise awareness about electricity billing issues, document consumer concerns and encourage transparency around electricity-related charges in Delhi.</p>
         <div className="focus-list">{focusAreas.map(({ icon: Icon, title }) => <div key={title}><Icon size={21} strokeWidth={1.5} /><span>{title}</span></div>)}</div>
         <a href="#our-work" className="text-link">Our approach <ArrowRight size={18} /></a>
+      </div>
+    </section>
+
+    <section className="section work-section" aria-labelledby="work-title">
+      <div className="container"><div className="section-heading"><div><p className="eyebrow">What We Do</p><h2 id="work-title">From consumer concerns to constructive representation.</h2></div></div>
+        <div className="work-grid">{workAreas.map((area, i) => <article key={area.title}><span>0{i + 1}</span><h3>{area.title}</h3><p>{area.description}</p></article>)}</div>
       </div>
     </section>
 
@@ -80,8 +86,14 @@ export default function Home() {
     </section>
 
     <section id="our-work" className="section container approach-section">
-      <div><p className="eyebrow">Our proposed approach</p><h2>Every concern starts<br />with understanding.</h2></div>
-      <ol className="approach-list">{['Understand the concern', 'Document the details', 'Represent & follow up'].map((title, i) => <li key={title}><span>0{i + 1}</span><h3>{title}</h3></li>)}</ol>
+      <div><p className="eyebrow">Our journey</p><h2>Taking consumer concerns forward.</h2></div>
+      <ol className="approach-list">{journey.map((title, i) => <li key={title}><span>0{i + 1}</span><h3>{title}</h3></li>)}</ol>
+    </section>
+
+    <section id="news-media" className="section news-section">
+      <div className="container"><div className="section-heading"><div><p className="eyebrow">News & Media</p><h2>Electricity updates that matter.</h2></div><p className="section-aside">Society activities, regulatory information and relevant media coverage.</p></div>
+        <div className="news-grid"><article><span className="news-tag">Society updates</span><h3>Meetings, representations and awareness initiatives</h3><p>Updates will be added as approved records become available.</p></article><article><span className="news-tag">Electricity updates</span><h3>Understanding changes affecting electricity bills</h3><p>Plain-language explanations will link to the relevant official source.</p></article><article><span className="news-tag">Media coverage</span><h3>Electricity issues in the news</h3><p>External reporting will remain clearly attributed to its original publication.</p></article></div>
+      </div>
     </section>
 
     <section id="resources" className="resources-section">
@@ -94,7 +106,7 @@ export default function Home() {
     </section>
 
     <section id="join" className="section container join-section">
-      <div className="section-heading"><div><p className="eyebrow">Take part</p><h2>There’s a place for you.</h2></div><p className="join-note">Express your interest. Start a conversation.</p></div>
+      <div className="section-heading"><div><p className="eyebrow">Contact & participation</p><h2>Start a conversation.</h2></div><p className="join-note">Ask a question, share a concern or request public information.</p></div>
       <div className="participation-grid">{participation.map((p, i) => <article className="participation-card" key={p.title}><span className="participation-number">0{i + 1}</span><h3>{p.title}</h3><InfoDialog {...p} label="Learn more" /></article>)}</div>
     </section>
 

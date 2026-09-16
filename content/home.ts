@@ -1,4 +1,4 @@
-// Homepage copy and source-derived facts. Review before public launch.
+// Homepage content from website-content.docx. Review factual and proposed wording before launch.
 export const society = {
   name: 'Delhi Fight Against Electricity Bills Society',
   caption: 'Governed by a private body/society.',
@@ -6,23 +6,37 @@ export const society = {
   date: '20 July 2026',
   address: 'Plot No. 86, Pocket-C, Sector-2, DSIIDC Bawana, Delhi–110039',
 };
+
+// These destinations become full routes as the remaining pages are built.
 export const navigation = [
-  ['About', '#about'], ['Bill Help', '#bill-help'], ['Our Work', '#our-work'],
-  ['Resources', '#resources'], ['Join Us', '#join'], ['Contact', '#contact'],
-];
+  ['About', '#about'], ['Our Work', '#our-work'], ['News & Media', '#news-media'],
+  ['Bill Help', '#bill-help'], ['Contact', '#contact'],
+] as const;
+
 export const guides = [
-  { title: 'Understand your bill', category: 'Start with the basics', description: 'Find the account details, billing period and payment information on your electricity bill.', paragraphs: ['Begin with the consumer or CA number, the billing period and the due date. Check that the bill belongs to the right account and period.', 'Keep a copy of the bill and compare the current and previous meter readings where they are shown. Bill layouts vary between providers.', 'The detailed guide will use an illustrative bill with numbered explanations. Provider-specific instructions will be reviewed before publication.'] },
-  { title: 'Bill components', category: 'Know the terminology', description: 'Get familiar with energy charges, fixed charges, adjustments and previous balances.', paragraphs: ['A bill can contain several different components. Look for separate entries for energy consumption, fixed charges, adjustments and any previous balance.', 'Compare like-for-like billing periods and retain the original bill when asking about an unfamiliar entry.', 'Examples, rates and calculation methods will be added only with their applicable period and reviewed source.'] },
-  { title: 'PPAC & FPPAS', category: 'Explore the context', description: 'Learn what to look for when reading information about power-purchase adjustments.', paragraphs: ['The meaning and application of these terms must be checked against the relevant provider and official order. They should not be assumed to be interchangeable.', 'A useful source identifies the provider, applicable consumer category and effective period. A historical news percentage is not necessarily a current rate.', 'This guide is reserved for a reviewed explanation with official references. No current rates are stated in this preview.'] },
-  { title: 'Raising a grievance', category: 'Prepare your records', description: 'Organise your concern and distinguish a Society enquiry from a formal complaint.', paragraphs: ['Keep the relevant bill, payment records and earlier correspondence together. Write down the question you want answered and the dates involved.', 'Contacting the Society does not automatically file a complaint with an electricity provider, regulator or public authority.', 'The full guide will include verified official channels and reviewed process information. This preview does not set legal deadlines or prescribe a formal sequence.'] },
+  { title: 'Learn about your bill', category: 'Understand the basics', description: 'Common electricity-bill components, explained clearly.', paragraphs: ['Electricity bills can include consumption charges, fixed charges, adjustments, taxes or duties and a previous balance.', 'The exact components depend on the provider, consumer category, tariff and applicable regulatory framework.', 'Detailed examples and current rates will be added only after source review.'] },
+  { title: 'Understand PPAC / FPPAS', category: 'Power-purchase adjustments', description: 'Learn why some power-purchase-related charges can change.', paragraphs: ['Power-purchase costs can vary with fuel prices, generation costs and market conditions.', 'Applicability can depend on the provider, tariff category, period and relevant regulatory orders.', 'Always verify the current bill and official provider or DERC information rather than relying on an old rate.'] },
+  { title: 'Know the grievance process', category: 'Prepare your records', description: 'Understand the steps to consider when a bill looks wrong.', paragraphs: ['Check the billing period, meter reading, consumption and individual charges. Keep previous bills and correspondence.', 'Use the provider’s official complaint mechanism where appropriate and save the complaint or reference number.', 'A Society enquiry is separate from a formal complaint to an electricity provider or authority.'] },
 ];
+
 export const documents = [
-  { title: 'Society registration certificate', category: 'Registration', date: '20 July 2026', description: 'Registration details and the Society’s recorded identity.', paragraphs: ['Registered name: DELHI FIGHT AGAINST ELECTRICITY BILLS SOCIETY.', 'Registration number: ROS/OUTER NORTH/2026/52. Certificate date: 20 July 2026. Working area: Delhi.', 'The specification transcribes the certificate as registration under the Societies Registration Act XXI of 1860, issued by the Registrar of Societies, District Outer North, Govt. of NCT of Delhi.', 'The original certificate must be checked before public publication. An approved certificate file has not yet been added to this homepage.'] },
-  { title: 'Earlier initiative: association support letter', category: 'Historical record', date: '24 July 2024', description: 'A support record from the initiative that predates the registered Society.', paragraphs: ['The specification records a letter from the Patparganj F.I.E. Entrepreneurs Association (Regd.), reference MMM/2024/286, dated 24 July 2024.', 'The letter refers to a meeting on 18 July 2024. It relates to the earlier electricity-bill initiative, before the Society’s registration in 2026.', 'It should not be presented as a 2024 endorsement of the registered Society. The source file and approved public copy will be added after review.'] },
+  { title: 'Society registration certificate', category: 'Registration', date: '20 July 2026', description: 'The Society’s registered identity and working area.', paragraphs: ['Registered name: DELHI FIGHT AGAINST ELECTRICITY BILLS SOCIETY.', 'Registration number: ROS/OUTER NORTH/2026/52. Registered under the Societies Registration Act XXI of 1860. Working area: Delhi.', 'Registered office: Plot No. 86, Pocket-C, Sector-2, DSIIDC Bawana, Delhi–110039.', 'The original certificate and public derivative require final review before publication.'] },
+  { title: 'Earlier initiative: association support letter', category: 'Historical record', date: '24 July 2024', description: 'A record from the broader electricity-bill initiative before registration.', paragraphs: ['The Patparganj F.I.E. Entrepreneurs Association (Regd.) letter is dated 24 July 2024 and references MMM/2024/286.', 'It refers to a meeting held on 18 July 2024 and concerns electricity-billing charges affecting Delhi industrialists.', 'This is earlier initiative material, not a 2024 endorsement of the Society registered in 2026.'] },
 ];
-export const issuePreview = {title: 'Sharing a billing concern', paragraphs: ['Issue submissions are not open in this homepage preview. No information or files are collected here.', 'The planned form will ask for your contact details, locality, electricity provider, a description of the concern and optional supporting bill copies.', 'Do not send passwords, payment credentials or Aadhaar details. Contacting the Society will not automatically file a complaint with a provider or authority.']};
+
+export const issuePreview = { title: 'Have an electricity-billing concern?', paragraphs: ['The issue form is not open in this homepage preview. No information or files are collected here.', 'The planned facility will help consumers share a short explanation, provider details and supporting records with the Society.', 'Submitting an issue to the Society does not automatically constitute a formal complaint to a provider, DERC or another authority.'] };
+
 export const participation = [
-  { title: 'Individual interest', description: 'Stay connected with the cause and express your interest in participating.', paragraphs: ['Individuals will be able to share their interest in the Society’s awareness and participation activities.', 'The planned enquiry will ask for contact details, locality and areas of interest. Sending an enquiry will not confer membership.', 'Participation forms are not collecting information in this homepage preview.'] },
-  { title: 'Association collaboration', description: 'Explore a conversation on shared electricity-billing concerns.', paragraphs: ['Associations and organisations will be able to introduce themselves and describe the concerns they would like to discuss.', 'The planned enquiry will include organisation and contact details, locality and a message. No partnership is created automatically.', 'Collaboration enquiries are not open in this homepage preview.'] },
-  { title: 'Volunteer interest', description: 'Offer your time and skills to support awareness and documentation.', paragraphs: ['The volunteer enquiry will provide space to describe interests, relevant skills and availability.', 'Roles and participation arrangements will need to be confirmed by the Society. No position is promised through an enquiry.', 'Volunteer enquiries are not open in this homepage preview.'] },
+  { title: 'Contact the Society', description: 'Ask a question about activities, documents or electricity-billing concerns.', paragraphs: ['A contact route will be added once verified Society channels are available.', 'Please retain official complaint numbers and supporting records for provider or authority processes.'] },
+  { title: 'Association / organisation', description: 'Start a conversation about a shared electricity-related concern.', paragraphs: ['Associations and organisations will be able to describe their purpose and the matter they wish to discuss.', 'An enquiry does not create a formal partnership or membership.'] },
+  { title: 'Media enquiry', description: 'Request public information about the Society and its activities.', paragraphs: ['Journalists and publications may request approved information, documents or activity context.', 'External reporting remains the responsibility of its original publisher.'] },
 ];
+
+export const workAreas = [
+  { title: 'Consumer awareness', description: 'Make electricity-billing information easier to understand.' },
+  { title: 'Representations & engagement', description: 'Bring documented concerns to appropriate institutions and forums.' },
+  { title: 'Association engagement', description: 'Build a wider conversation across households, businesses and industries.' },
+  { title: 'News & regulatory awareness', description: 'Share relevant developments with clear source context.' },
+];
+
+export const journey = ['Listen to consumers', 'Understand the concern', 'Document the issue', 'Engage constructively', 'Represent through appropriate channels', 'Inform consumers about developments'];
