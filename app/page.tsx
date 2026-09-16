@@ -18,8 +18,8 @@ export default function Home() {
   return <main id="main">
     <section className="hero photo-hero" aria-labelledby="hero-title">
       <picture className="hero-background">
-        <source media="(max-width: 639px)" srcSet="/images/neighbourhood-hero-mobile.webp" />
-        <img src="/images/neighbourhood-hero.webp" width={1672} height={941} alt="" fetchPriority="high" decoding="async" />
+        <source media="(max-width: 639px)" srcSet="/images/public-grievances-commission-mobile.webp" />
+        <img src="/images/public-grievances-commission.webp" width={1400} height={1050} alt="" fetchPriority="high" decoding="async" />
       </picture>
       <div className="hero-shade" />
       <div className="container hero-content">
@@ -45,8 +45,8 @@ export default function Home() {
 
     <section id="about" className="section container about-section">
       <div className="editorial-photo community-photo">
-        <EditorialImage name="community" alt="Illustrative image of people discussing paperwork around a table." />
-        <span className="photo-label">A shared purpose</span>
+        <EditorialImage name="electricity-bills-group" alt="Group holding Delhi Fight Against Electricity Bill placards." />
+        <span className="photo-label">Consumer awareness</span>
       </div>
       <div className="about-copy">
         <p className="eyebrow">About the Society</p>
