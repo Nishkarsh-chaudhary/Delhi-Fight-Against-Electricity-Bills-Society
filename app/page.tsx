@@ -27,8 +27,8 @@ export default function Home() {
         <h1 id="hero-title">Delhi Fight Against<br className="hero-break" /> Electricity Bills Society</h1>
         <p className="hero-lead">Standing Together for Electricity Consumers in Delhi</p>
         <div className="actions">
-          <a href="#bill-help" className="button accent">Get Bill Help <ArrowRight size={18} /></a>
-          <a href="#about" className="button hero-secondary">Know About Us <ArrowRight size={18} /></a>
+          <a href="/bill-help" className="button accent">Get Bill Help <ArrowRight size={18} /></a>
+          <a href="/about" className="button hero-secondary">Know About Us <ArrowRight size={18} /></a>
         </div>
       </div>
       <div className="hero-bottom container"><span>Awareness</span><i /><span>Transparency</span><i /><span>Representation</span></div>
@@ -106,7 +106,7 @@ export default function Home() {
 
     <section id="join" className="section container join-section">
       <div className="section-heading"><div><p className="eyebrow">Contact & participation</p><h2>Start a conversation.</h2></div><p className="join-note">Ask a question, share a concern or request public information.</p></div>
-      <div className="participation-grid">{participation.map((p, i) => <article className="participation-card" key={p.title}><span className="participation-number">0{i + 1}</span><h3>{p.title}</h3><InfoDialog {...p} label="Learn more" /></article>)}</div>
+      <div className="participation-grid">{participation.map((p, i) => <article className="participation-card" key={p.title}><span className="participation-number">0{i + 1}</span><h3>{p.title}</h3><p>{p.description}</p><a href="/contact" className="text-link">Contact the Society <ArrowRight size={17}/></a></article>)}</div>
     </section>
 
     <section id="share-concern" className="container concern-section"><div className="callout"><div><p className="eyebrow">Let’s start with your concern</p><h2>A question about your bill?</h2></div><div className="callout-action"><InfoDialog {...issuePreview} label="Submit your issue" className="button accent" /><p>Submissions are not open in this preview.</p></div></div></section>
