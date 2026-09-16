@@ -2,29 +2,14 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Building2, FileText, MessageSquare } from 'lucide-react';
+import { ourWorkContent } from '@/content/home';
 
 export const metadata: Metadata = {
   title: 'Our Work',
   description: 'Learn how Delhi Fight Against Electricity Bills Society approaches awareness, documentation, engagement and representation.',
 };
 
-const approach = [
-  ['Listen to Consumers', 'Understand the concerns being raised and how they affect consumers.'],
-  ['Document the Issue', 'Encourage collection of bills, correspondence, complaints and supporting information.'],
-  ['Identify Common Concerns', 'Look for recurring electricity-billing issues affecting multiple consumers.'],
-  ['Engage Constructively', 'Discuss documented matters with relevant stakeholders and institutions where appropriate.'],
-  ['Represent Through Appropriate Channels', 'Raise documented concerns before relevant institutions and authorities through available channels.'],
-  ['Inform Consumers', 'Keep consumers aware of relevant developments and outcomes when they are documented.'],
-] as const;
-
-const activities = [
-  'Electricity-bill awareness efforts',
-  'Meetings with consumers and stakeholders',
-  'Engagement with industrial associations',
-  'Representations concerning consumer grievances',
-  'Sharing relevant electricity and regulatory developments',
-  'Documenting support and activities',
-];
+const { approach, activities } = ourWorkContent;
 
 export default function OurWorkPage() {
   return <main id="main" className="our-work-page">

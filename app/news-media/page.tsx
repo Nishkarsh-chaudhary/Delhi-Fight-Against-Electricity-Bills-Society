@@ -2,10 +2,11 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Newspaper } from 'lucide-react';
 import { NewsArchive } from './news-archive';
+import { newsMediaContent } from '@/content/home';
 export const metadata: Metadata = { title: 'News & Media | Delhi Fight Against Electricity Bills Society', description: 'Society activities, electricity-billing developments, regulatory updates and Hindi newspaper coverage.' };
 export default function NewsMediaPage() {
  return <main id="main" className="media-page">
-  <section className="inner-hero media-hero"><div className="container"><p className="eyebrow"><span/> News & Media</p><h1>Follow Electricity Developments & Society Activities</h1><p className="inner-hero-lead">Stay informed about Society activities, electricity-billing developments, regulatory updates, representations and relevant media coverage.</p><a className="text-link" href="#latest-updates">Explore the latest updates <ArrowRight size={18}/></a></div></section>
+  <section className="inner-hero media-hero"><div className="container"><p className="eyebrow"><span/> News & Media</p><h1>{newsMediaContent.heroTitle}</h1><p className="inner-hero-lead">{newsMediaContent.heroLead}</p><a className="text-link" href="#latest-updates">Explore the latest updates <ArrowRight size={18}/></a></div></section>
   <section id="latest-updates" className="section container"><div className="section-heading"><div><p className="eyebrow">Latest Updates</p><h2>Latest from the Society</h2></div><p className="section-aside">News and source material collected for consumer awareness.</p></div><NewsArchive/></section>
   <section className="section media-explainer" id="regulatory-updates"><div className="container"><div className="section-heading"><div><p className="eyebrow">Electricity & Regulatory Updates</p><h2>Understanding What Is Changing</h2></div><p className="section-aside">Electricity billing is influenced by tariff orders, regulatory decisions, power-purchase costs and other applicable mechanisms.</p></div><div className="media-context-grid">{[
    ['What changed?', 'The supplied newspaper reports describe a move from quarterly to monthly review of power-purchase adjustment costs (PPAC).'],

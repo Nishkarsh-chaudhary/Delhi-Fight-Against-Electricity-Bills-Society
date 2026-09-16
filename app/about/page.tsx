@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { ArrowRight, Building2, MapPin, ShieldCheck } from 'lucide-react';
-import { society } from '@/content/home';
+import { society, aboutContent } from '@/content/home';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
@@ -9,21 +9,7 @@ export const metadata: Metadata = {
   description: 'Learn about Delhi Fight Against Electricity Bills Society, its purpose, objectives and registration.',
 };
 
-const objectives = [
-  ['Consumer Education', 'Making electricity bills and important billing concepts easier to understand.'],
-  ['Issue Documentation', 'Encouraging consumers to maintain bills, complaints, correspondence and other relevant records.'],
-  ['Consumer Representation', 'Helping bring documented electricity-related concerns to the attention of appropriate institutions.'],
-  ['Stakeholder Engagement', 'Engaging with consumers, industrial associations, market organisations and other stakeholders.'],
-  ['Regulatory Awareness', 'Helping consumers remain informed about relevant electricity and regulatory developments.'],
-  ['Public Awareness', 'Using meetings, information resources, activities and media engagement to increase awareness.'],
-] as const;
-
-const values = [
-  ['Transparency', 'Information should be presented clearly and responsibly.'],
-  ['Awareness', 'Better-informed consumers are better positioned to understand their bills.'],
-  ['Collective Participation', 'Common concerns can benefit from organised dialogue.'],
-  ['Responsible Representation', 'Issues should be supported by documentation and raised through appropriate channels.'],
-] as const;
+const { objectives, values } = aboutContent;
 
 export default function AboutPage() {
   return <main id="main" className="about-page">

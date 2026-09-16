@@ -1,32 +1,13 @@
 import type { Metadata } from 'next'
 import { AlertCircle, CheckCircle2 } from 'lucide-react'
+import { billHelpContent } from '@/content/home'
 
 export const metadata: Metadata = {
   title: 'Bill Help',
   description: 'Clear, practical guidance for understanding electricity bills and documenting billing concerns.',
 }
 
-const components = [
-  ['Energy / Consumption Charges', 'The charge linked to the electricity units recorded during the billing period.'],
-  ['Fixed Charges', 'A recurring charge that can apply based on your connection, sanctioned load or consumer category.'],
-  ['PPAC / FPPAS', 'A power-purchase related adjustment that may reflect changing fuel, generation and procurement costs.'],
-  ['Taxes / Duties', 'Government levies or duties shown separately on the bill, where applicable.'],
-  ['Previous Balance / Adjustments', 'Earlier dues, credits, rebates or corrections carried into the current bill.'],
-  ['Total Amount Payable', 'The final amount due after all current charges, balances and adjustments are combined.'],
-]
-
-const checks = [
-  ['Check Billing Period', 'Make sure the bill covers the expected month and number of days.'],
-  ['Check Meter Reading & Consumption', 'Compare current and previous readings, and note unusual consumption.'],
-  ['Review Individual Charges', 'Look at each line item instead of only the final amount.'],
-  ['Keep Previous Bills', 'Use earlier bills to compare readings, rates and recurring charges.'],
-  ['Contact Your Electricity Provider', 'Raise a query through the provider’s official complaint channel.'],
-  ['Save Your Complaint Number', 'Keep the acknowledgement or reference number for follow-up.'],
-  ['Escalate Through Applicable Channels', 'If needed, use the next available grievance or regulatory channel.'],
-]
-
-const documents = ['Latest electricity bill', 'Previous bills for comparison', 'Consumer / CA number', 'Electricity provider name', 'Bill month and amount', 'Complaint or reference number', 'Relevant correspondence', 'Short explanation of the concern']
-const categories = ['High Electricity Bill', 'PPAC / FPPAS', 'Incorrect Billing', 'Meter Issue', 'Fixed Charges', 'Previous Dues', 'Load Related Issue', 'Other']
+const { components, checks, documents, categories } = billHelpContent
 
 export default function BillHelpPage() {
   return (
