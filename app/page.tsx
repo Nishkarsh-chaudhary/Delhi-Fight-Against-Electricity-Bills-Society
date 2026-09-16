@@ -1,15 +1,8 @@
 /* Images use pre-sized, local WebP files and explicit responsive sources. */
 /* eslint-disable @next/next/no-img-element */
-import { ArrowRight, BookOpen, FileText, Users, Scale, HandHeart } from 'lucide-react';
+import { ArrowRight, BookOpen, FileText } from 'lucide-react';
 import { society, guides, documents, issuePreview, participation, journey, workAreas } from '@/content/home';
 import { InfoDialog } from '@/components/site/info-dialog';
-
-const focusAreas = [
-  { icon: BookOpen, title: 'Bill awareness' },
-  { icon: Users, title: 'Consumer representation' },
-  { icon: Scale, title: 'Regulatory awareness' },
-  { icon: HandHeart, title: 'Collective participation' },
-];
 
 function EditorialImage({ name, alt, className = '' }: { name: string; alt: string; className?: string }) {
   return <img
@@ -57,11 +50,17 @@ export default function Home() {
       </div>
       <div className="about-copy">
         <p className="eyebrow">About the Society</p>
-        <h2>Better informed.<br />Stronger together.</h2>
-        <p>Delhi Fight Against Electricity Bills Society is a registered society working to raise awareness about electricity billing issues, document consumer concerns and encourage transparency around electricity-related charges in Delhi.</p>
-        <div className="focus-list">{focusAreas.map(({ icon: Icon, title }) => <div key={title}><Icon size={21} strokeWidth={1.5} /><span>{title}</span></div>)}</div>
-        <a href="#our-work" className="text-link">Our approach <ArrowRight size={18} /></a>
+        <h2>A Collective Voice for Electricity Consumers</h2>
+        <p>Electricity bills can involve multiple charges, adjustments and regulatory components that are not always easy for consumers to understand.</p>
+        <p>Delhi Fight Against Electricity Bills Society provides an organised platform for raising awareness about such issues and documenting concerns faced by consumers.</p>
+        <p>Our work focuses on consumer awareness, representation, stakeholder engagement and access to useful information so that electricity consumers can better understand their bills and the channels available for raising grievances.</p>
+        <div className="who-facts"><div><strong>Registered Society</strong><span>Formally registered in Delhi under the Societies Registration Act XXI of 1860.</span></div><div><strong>Working Across Delhi</strong><span>The Society&apos;s registered working area is Delhi.</span></div><div><strong>Consumer-Focused</strong><span>Our activities are centred around electricity-billing awareness and issues affecting consumers.</span></div></div>
+        <a href="#our-work" className="text-link">Learn More About the Society <ArrowRight size={18} /></a>
       </div>
+    </section>
+
+    <section id="purpose" className="section purpose-section">
+      <div className="container purpose-grid"><div><p className="eyebrow">Our Purpose</p><h2>Electricity Bills Should Be Easier to Understand</h2><p>Changes in electricity tariffs, power-purchase-related adjustments and other billing components can have a direct impact on consumers.</p><p>Our purpose is to help create greater awareness around these matters and provide consumers with a platform through which their concerns can be documented and appropriately represented.</p></div><div className="purpose-list">{[{title:'Understand',text:'Make electricity-billing information easier for consumers to understand.'},{title:'Document',text:'Collect and organise genuine electricity-billing concerns and supporting information.'},{title:'Represent',text:'Raise documented issues before relevant institutions and authorities through appropriate channels.'},{title:'Inform',text:'Share important regulatory, billing and consumer-related developments.'}].map((item,i)=><article key={item.title}><span>0{i+1}</span><div><h3>{item.title}</h3><p>{item.text}</p></div></article>)}</div></div>
     </section>
 
     <section className="section work-section" aria-labelledby="work-title">

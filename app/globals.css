@@ -92,6 +92,18 @@ svg { flex-shrink:0; }
 .focus-list>div { display:flex; align-items:center; gap:11px; font-size:14px; color:#123b67; }
 .focus-list svg { color:#6a829c; }
 .about-copy .text-link { margin-top:25px; }
+.who-facts { display:grid; gap:13px; margin-top:28px; }
+.who-facts>div { border-left:2px solid #f28c28; padding-left:14px; }
+.who-facts strong { display:block; color:#123b67; font-size:14px; margin-bottom:2px; }
+.who-facts span { display:block; color:#475467; font-size:13px; line-height:1.5; }
+.purpose-section { background:#eef4fa; border-block:1px solid #e0e9f2; }
+.purpose-grid { display:grid; grid-template-columns:1fr 1.05fr; gap:90px; align-items:start; }
+.purpose-grid>div:first-child>p:not(.eyebrow) { max-width:520px; font-size:16px; }
+.purpose-list { display:grid; grid-template-columns:1fr 1fr; gap:22px 30px; }
+.purpose-list article { display:flex; gap:14px; border-top:1px solid #b8c9dc; padding-top:17px; }
+.purpose-list article>span { font-size:12px; color:#7a8da3; }
+.purpose-list h3 { font-size:19px; margin-bottom:7px; }
+.purpose-list p { font-size:14px; line-height:1.55; }
 .work-section { background:#f8fafc; border-block:1px solid #e6ebf0; }
 .work-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
 .work-grid article { border-top:1px solid #b9c8d7; padding-top:19px; }
@@ -196,6 +208,7 @@ svg { flex-shrink:0; }
   .facts-strip .text-action { justify-self:start; }
   .section { padding-block:60px; }
   .about-section,.approach-section { gap:32px; }
+  .purpose-grid { gap:40px; }
   .community-photo { aspect-ratio:1; }
   .focus-list { grid-template-columns:1fr; gap:12px; margin-top:22px; }
   .about-copy h2 { font-size:32px; }
@@ -242,9 +255,11 @@ svg { flex-shrink:0; }
   .facts-strip .text-action { font-size:13px; gap:8px; }
   .section { padding-block:48px; }
   .about-section,.bill-grid,.approach-section { grid-template-columns:1fr; gap:30px; }
+  .purpose-grid { grid-template-columns:1fr; gap:30px; }
   .community-photo { aspect-ratio:1.36; }
   .about-copy h2 { font-size:34px; }
   .focus-list { grid-template-columns:1fr 1fr; gap:16px 14px; }
+  .purpose-list { grid-template-columns:1fr; gap:18px; }
   .focus-list>div { font-size:13px; gap:8px; }
   .focus-list svg { width:19px; }
   .about-copy>p:not(.eyebrow) { max-width:100%; margin-top:18px; }
