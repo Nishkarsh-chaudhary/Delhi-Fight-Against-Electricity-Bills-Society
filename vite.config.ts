@@ -6,11 +6,11 @@ export default defineConfig({
   plugins: [
     vinext(),
     nitro({
-      preset: "cloudflare_module",
+      preset: "vercel",
       output: {
-        dir: "dist",
-        serverDir: "dist/server",
-        publicDir: "dist/client",
+        dir: ".vercel/output",
+        serverDir: ".vercel/output/functions/__server.func",
+        publicDir: ".vercel/output/static",
       },
     }),
   ],
